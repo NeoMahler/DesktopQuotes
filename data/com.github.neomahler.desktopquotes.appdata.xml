@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Ondo Alvellë <ondo.alvelle@gmail.com> -->
+<component type="desktop">
+  <id>com.github.neomahler.desktopquotes</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Desktop Quotes</name>
+  <summary>Display quotes from your favourite shows, films and books</summary>
+  <description>
+    <p>Spice up your desktop with some quotes from famous shows, movies or books. This applet stays always on the bottom of all workspaces and is always transparent. You can change the current quote using the Shuffle icon and change from dark to light theme so that it fits your wallpaper.</p>
+    <p>Set to automatically start in System Settings → Applications → Startup</p>
+  </description>
+
+ <custom>
+     <value key="x-appcenter-color-primary">#4F5D73</value>
+     <value key="x-appcenter-color-primary-text">#FFFFFF</value>
+     <value key="x-appcenter-suggested-price">2</value>
+  </custom>
+</component>
