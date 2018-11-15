@@ -1,4 +1,4 @@
-project ('com.github.cassidyjames.principles', 'vala', 'c')
+project ('com.github.neomahler.desktopquotes', 'vala', 'c')
 
 gnome = import ('gnome')
 
