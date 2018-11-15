@@ -2,7 +2,6 @@ project('com.github.neomahler.desktopquotes', 'vala', 'c')
 
 executable(
     meson.project_name (),
-    asresources,
     'src/Application.vala',
     'src/Content.vala',
     'src/MainWindow.vala',
