@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright (c) 2018 Ondo Alvellë
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,19 +16,19 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Cassidy James Blaede <c@ssidyjam.es>
+* Authored by: Ondo Alvellë <ondo.alvelle@gmail.com>
 */
 
 public class Principles : Gtk.Application {
     public static GLib.Settings settings;
 
     public Principles () {
-        Object (application_id: "com.github.cassidyjames.principles",
+        Object (application_id: "com.github.neomahler.desktopquotes",
         flags: ApplicationFlags.FLAGS_NONE);
     }
 
     static construct {
-        settings = new Settings ("com.github.cassidyjames.principles");
+        settings = new Settings ("com.github.neomahler.desktopquotes");
     }
 
     protected override void activate () {
@@ -67,4 +67,3 @@ public class Principles : Gtk.Application {
         return app.run (args);
     }
 }
-
