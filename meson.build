@@ -1,14 +1,4 @@
-project ('com.github.neomahler.desktopquotes', 'vala', 'c')
-
-gnome = import ('gnome')
-
-add_global_arguments ('-DGETTEXT_PACKAGE="' + meson.project_name () + '"', language:'c')
-
-asresources = gnome.compile_resources(
-    'as-resources', 'data/' + meson.project_name() + '.gresource.xml',
-    source_dir: 'data',
-    c_name: 'as'
-)
+project('com.github.neomahler.desktopquotes', 'vala', 'c')
 
 executable(
     meson.project_name (),
@@ -24,7 +14,13 @@ executable(
     install: true
 )
 
-subdir ('data')
+#Install our .desktop file so the Applications Menu will see it
+install_data(
+    join_paths('data', meson.project_name() + '.desktop'),
+    install_dir: join_paths(get_option('datadir'), 'applications')
+)
 
-meson.add_install_script('meson/post_install.py')
-
+install_data(
+    join_paths('data', meson.project_name() + '.appdata.xml'),
+    install_dir: join_paths(get_option('datadir'), 'metainfo')
+)
