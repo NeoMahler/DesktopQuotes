@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright (c) 2018 Ondo Alvellë
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,7 +16,7 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Cassidy James Blaede <c@ssidyjam.es>
+* Authored by: Ondo Alvellë <ondo.alvelle@gmail.com>
 */
 
 public class MainWindow : Gtk.Window {
@@ -25,10 +25,9 @@ public class MainWindow : Gtk.Window {
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
-            icon_name: "com.github.cassidyjames.principles",
+            icon_name: "com.github.neomahler.desktopquotes",
             resizable: false,
             skip_taskbar_hint: true,
-            title: _("Principles"),
             window_position: Gtk.WindowPosition.CENTER
         );
     }
@@ -38,12 +37,11 @@ public class MainWindow : Gtk.Window {
         header.show_close_button = true;
         var header_context = header.get_style_context ();
         header_context.add_class ("titlebar");
-        header_context.add_class ("default-decoration");
         header_context.add_class (Gtk.STYLE_CLASS_FLAT);
 
         var randomize_button = new Gtk.Button.from_icon_name ("media-playlist-shuffle-symbolic");
         randomize_button.margin_end = 12;
-        randomize_button.tooltip_text = _("Load a random principle");
+        randomize_button.tooltip_text = _("Choose a random quote");
 
         var gtk_settings = Gtk.Settings.get_default ();
 
@@ -65,7 +63,7 @@ public class MainWindow : Gtk.Window {
         context.add_class ("flat");
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/com/github/cassidyjames/principles/Application.css");
+        provider.load_from_resource ("/com/github/neomahler/desktopquotes/Application.css");
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         mode_switch.notify["active"].connect (() => {
@@ -95,7 +93,7 @@ public class MainWindow : Gtk.Window {
     }
 
     private void randomize_principle (ContentStack stack, bool allow_current = false) {
-        int rand = Random.int_range (1, 11);
+        int rand = Random.int_range (1, 29);
         int current = int.parse (stack.visible_child_name);
 
         if (allow_current || rand != current) {
@@ -115,4 +113,3 @@ public class MainWindow : Gtk.Window {
         return base.configure_event (event);
     }
 }
-
