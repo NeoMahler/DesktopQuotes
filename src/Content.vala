@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 Cassidy James Blaede (https://cassidyjames.com)
+* Copyright (c) 2018 Ondo Alvellë
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,55 +16,130 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Cassidy James Blaede <c@ssidyjam.es>
+* Authored by: Ondo Alvellë <ondo.alvelle@gmail.com>
 */
 
 public class ContentStack : Gtk.Stack {
     private struct Content {
-        string title;
-        string description;
+        string text;
+        string author;
     }
 
     static Content[] content = {
         Content () {
-            title = "Good design is innovative",
-            description = "The possibilities for innovation are not, by any means, exhausted. Technological development is always offering new opportunities for innovative design. But innovative design always develops in tandem with innovative technology, and can never be an end in itself."
+            text = "It is important to draw wisdom from different places. If you take it from only one place it become rigid and stale.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design makes a product useful",
-            description = "A product is bought to be used. It has to satisfy certain criteria, not only functional, but also psychological and aesthetic. Good design emphasizes the usefulness of a product whilst disregarding anything that could possibly detract from it."
+            text = "Pride is not the opposite of shame, but it’s source. True humility is the only antidote to shame.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design is aesthetic",
-            description = "The aesthetic quality of a product is integral to its usefulness because products we use every day affect our person and our well-being. But only well-executed objects can be beautiful."
+            text = "Life happens wherever you are, whether you make it or not.",
+            author = "Iroh"
+        },        Content () {
+            text = "There is nothing wrong with letting people who love you, help you.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design makes a product understandable",
-            description = "It clarifies the product’s structure. Better still, it can make the product talk. At best, it is self-explanatory."
+            text = "Sometimes the best way to solve your own problems is to help someone else.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design is unobtrusive",
-            description = "Products fulfilling a purpose are like tools. They are neither decorative objects nor works of art. Their design should therefore be both neutral and restrained, to leave room for the user’s self-expression."
+            text = "If you look for the light, you can often find it. But if you look for the dark, that is all you will ever see.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design is honest",
-            description = "It does not make a product more innovative, powerful or valuable than it really is. It does not attempt to manipulate the consumer with promises that cannot be kept."
+            text = "Many things that seem threatening in the dark become welcoming when we shine light on them.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design is long-lasting",
-            description = "It avoids being fashionable and therefore never appears antiquated. Unlike fashionable design, it lasts many years—even in today’s throwaway society."
+            text = "Perfection and power are overrated.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design is thorough down to the last detail",
-            description = "Nothing must be arbitrary or left to chance. Care and accuracy in the design process show respect towards the user."
+            text = "Failure is only the opportunity to begin again. Only this time, more wisely.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design is environmentally-friendly",
-            description = "Design makes an important contribution to the preservation of the environment. It conserves resources and minimizes physical and visual pollution throughout the lifecycle of the product."
+            text = "Hope is something you give yourself.",
+            author = "Iroh"
         },
         Content () {
-            title = "Good design is as little design as possible",
-            description = "Less, but better—because it concentrates on the essential aspects, and the products are not burdened with non-essentials. Back to purity, back to simplicity."
+            text = "Anyone is capable of great good and great evil. Everyone has to be treated like they are worth giving a chance.",
+            author = "Aang"
+        },
+        Content () {
+            text = "The greatest illusion in this world is the illusion of separation. Things you think are separate and different are actually one and the same. We are all one people, but we live as if divided.",
+            author = "Guru Pathik"
+        },
+        Content () {
+            text = "When we hit our lowest point, we are open to the greatest change.",
+            author = "Aang"
+        },
+        Content () {
+            text = "Admitting your fears is the the first and the most difficult step in overcoming them.",
+            author = "Tenzin"
+        },
+        Content () {
+            text = "True wisdom begins when we accept things as they are.",
+            author = "Tenzin"
+        },
+        Content () {
+            text = "All we have to decide is what to do with the time that is given us.",
+            author = "Gandalf"
+        },
+        Content () {
+            text = "Many that live deserve death. And some that die deserve life. Can you give it to them? Do not be too eager to deal out death in judgement. For even the very wise cannot see all ends.",
+            author = "Gandalf"
+        },
+        Content () {
+            text = "Not all those who wander are lost.",
+            author = "Gandalf"
+        },
+        Content () {
+            text = "We can't concern ourselves with what was, we must act on what is.",
+            author = "Gyatso"
+        },
+        Content () {
+            text = "There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.",
+            author = "Count Therpe"
+        },
+        Content () {
+            text = "Metal rusts, music lasts forever.",
+            author = "Kvothe"
+        },
+        Content () {
+            text = "A long stretch of road will teach you more about yourself than a hundred years of quiet introspection.",
+            author = "Kvothe"
+        },
+        Content () {
+            text = "Anyone can love a thing because. That's as easy as putting a penny in your pocket. But to love something despite. To know the flaws and love them too. That is rare and pure and perfect.",
+            author = "Kvothe"
+        },
+        Content () {
+            text = "Bad enough to be a lettuce. How awful to think you are a lettuce too.",
+            author = "Auri"
+        },
+        Content () {
+            text = "Nothing was anything else. Nothing was anything it shouldn't be.",
+            author = "Auri"
+        },
+        Content () {
+            text = "Half of seeming clever is keeping your mouth shut at the right times.",
+            author = "Kvothe"
+        },
+        Content () {
+            text = "Words can light fires in the minds of men. Words can wring tears from the hardest hearts.",
+            author = "Elodin"
+        },
+        Content () {
+            text = "Using words to talk of words is like using a pencil to draw a picture of itself, on itself. Impossible. Confusing. Frustrating...",
+            author = "Elodin"
+        },
+        Content () {
+            text = "We are all human, aren’t we? Every human life is worth the same, and worth saving.",
+            author = "Kingsley Shacklebolt"
         }
     };
 
@@ -78,33 +153,29 @@ public class ContentStack : Gtk.Stack {
     construct {
         int i = 1;
         foreach (var principle in content) {
-            var number = new Gtk.Label (i.to_string ());
-            number.margin_start = 12;
-            number.margin_end = 24;
-            number.valign = Gtk.Align.START;
-            number.get_style_context ().add_class ("principle-number");
 
-            var title = new Gtk.Label (principle.title);
-            title.max_width_chars = 28;
-            title.valign = Gtk.Align.END;
-            title.wrap = true;
-            title.xalign = 0;
-            title.get_style_context ().add_class ("principle-title");
+            var text = new Gtk.Label (principle.text);
+            text.max_width_chars = 80;
+            text.valign = Gtk.Align.START;
+            text.wrap = true;
+            text.xalign = 0;
+            text.margin_left = 10;
+            text.get_style_context ().add_class ("quote-text");
 
-            var description = new Gtk.Label (principle.description);
-            description.max_width_chars = 40;
-            description.wrap = true;
-            description.valign = Gtk.Align.START;
-            description.xalign = 0;
-            description.get_style_context ().add_class ("principle-description");
+            var author = new Gtk.Label (principle.author);
+            author.max_width_chars = 28;
+            author.wrap = true;
+            author.valign = Gtk.Align.START;
+            author.xalign = 0;
+            author.margin_left = 10;
+            author.get_style_context ().add_class ("quote-author");
 
             var grid = new Gtk.Grid ();
-            grid.column_spacing = grid.row_spacing = 12;
+            grid.column_spacing = grid.row_spacing = 7;
             grid.halign = Gtk.Align.CENTER;
 
-            grid.attach (number,      0, 0, 1, 2);
-            grid.attach (title,       1, 0);
-            grid.attach (description, 1, 1);
+            grid.attach (text,   1, 0);
+            grid.attach (author, 1, 1);
 
             add_named (grid, i.to_string ());
 
@@ -115,4 +186,3 @@ public class ContentStack : Gtk.Stack {
         visible_child_name = rand.to_string ();
     }
 }
-
