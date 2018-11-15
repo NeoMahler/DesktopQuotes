@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Desktop Quotes
+GenericName=Desktop Quotes widget
+Comment=Display random quotes on the desktop as a widget.
+Categories=Utility;
+Exec=com.github.neomahler.desktopquotes
+Icon=com.github.neomahler.desktopquotes
+Terminal=false
+Type=Application
+Keywords=random;quotes;desktop;
