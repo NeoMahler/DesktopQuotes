@@ -1,4 +1,6 @@
-This is an app that will (eventually) display random quotes from TV shows or book series on your desktop.
+*Desktop Quotes* is a desktop widget app for elementary OS that displays a random quote from a TV show, film or book series.
+
+It's forked from *Principles* by Cassidy James. The icon is from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Circle-icons-quote.svg), reused under the CC-BY-SA 3.0 license.
 
 ## Developing and Building
 
@@ -14,7 +16,7 @@ Run `meson build` to configure the build environment and run `ninja test` to bui
     cd build
     ninja test
 
-To install, use `ninja install`, then execute with `com.github.neomahler.principles`
+To install, use `ninja install`, then execute with `com.github.neomahler.desktopquotes`
 
     sudo ninja install
     com.github.neomahler.desktopquotes
