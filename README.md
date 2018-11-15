@@ -17,7 +17,7 @@ Run `meson build` to configure the build environment and run `ninja test` to bui
 To install, use `ninja install`, then execute with `com.github.neomahler.principles`
 
     sudo ninja install
-    com.github.neomahler.principles
+    com.github.neomahler.desktopquotes
 
 
 ## Other Platforms
