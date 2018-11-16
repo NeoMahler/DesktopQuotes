@@ -140,6 +140,42 @@ public class ContentStack : Gtk.Stack {
         Content () {
             text = "We are all human, aren’t we? Every human life is worth the same, and worth saving.",
             author = "Kingsley Shacklebolt"
+        },
+        Content () {
+            text = "Rhaegar fought valiantly, Rhaegar fought nobly. And Rhaegar died.",
+            author = "Jorah Mormont"
+        },
+        Content () {
+            text = "A very small man can cast a very large shadow.",
+            author = "Lord Varys"
+        },
+        Content () {
+            text = "A reader lives a thousand lives before he dies. The man who doesn't read lives only one.",
+            author = "Jojen Reed"
+        },
+        Content () {
+            text = "Once you have accepted your flaws, no one can use them against you.",
+            author = "Tyrion Lannister"
+        },
+        Content () {
+            text = "Hodor.",
+            author = "Hodor"
+        },
+        Content () {
+            text = "When you play the game of thrones, you win or you die.",
+            author = "Cersei Lannister"
+        },
+        Content () {
+            text = "Of course it is happening inside your head, but why on earth should that mean that it is not real.",
+            author = "Albus Dumbledore"
+        },
+        Content () {
+            text = "Do or do not, there is no try.",
+            author = "Yoda"
+        },
+        Content () {
+            text = "Attachment leads to jealously. The shadow of greed, that is.",
+            author = "Yoda"
         }
     };
 
