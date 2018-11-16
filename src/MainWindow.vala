@@ -78,9 +78,15 @@ public class MainWindow : Gtk.Window {
 
         Principles.settings.bind ("dark", mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
-        header.pack_end (mode_switch);
-        header.pack_end (randomize_button);
+        //Gtk.ButtonBox box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+        //box.set_layout (Gtk.ButtonBoxStyle.START);
+        //box.add (mode_switch);
+        //box.add (randomize_button);
 
+        header.pack_start (randomize_button);
+        header.pack_start (mode_switch);
+        
+        //header.set_custom_title (box);
         set_titlebar (header);
         set_keep_below (true);
         stick ();
