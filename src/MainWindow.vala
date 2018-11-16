@@ -39,6 +39,10 @@ public class MainWindow : Gtk.Window {
         header_context.add_class ("titlebar");
         header_context.add_class (Gtk.STYLE_CLASS_FLAT);
 
+        var plus_button = new Gtk.Button.from_icon_name ("list-add-symbolic");
+        plus_button.margin_end = 12;
+        plus_button.tooltip_text = _("Request a quote to be added");
+
         var randomize_button = new Gtk.Button.from_icon_name ("media-playlist-shuffle-symbolic");
         randomize_button.margin_end = 12;
         randomize_button.tooltip_text = _("Choose a random quote");
@@ -74,6 +78,10 @@ public class MainWindow : Gtk.Window {
             }
         });
 
+        plus_button.clicked.connect (() => {
+                Granite.Services.System.open_uri("https://github.com/NeoMahler/DesktopQuotes/issues/new?title=Add+more+quotes&labels=quote+request");
+        });
+
         randomize_button.clicked.connect (() => randomize_principle (stack) );
 
         Principles.settings.bind ("dark", mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -83,6 +91,7 @@ public class MainWindow : Gtk.Window {
         //box.add (mode_switch);
         //box.add (randomize_button);
 
+        header.pack_start (plus_button);
         header.pack_start (randomize_button);
         header.pack_start (mode_switch);
         
