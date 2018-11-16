@@ -159,7 +159,6 @@ public class ContentStack : Gtk.Stack {
             text.valign = Gtk.Align.START;
             text.wrap = true;
             text.xalign = 0;
-            text.margin_left = 10;
             text.get_style_context ().add_class ("quote-text");
 
             var author = new Gtk.Label (principle.author);
@@ -167,12 +166,12 @@ public class ContentStack : Gtk.Stack {
             author.wrap = true;
             author.valign = Gtk.Align.START;
             author.xalign = 0;
-            author.margin_left = 10;
             author.get_style_context ().add_class ("quote-author");
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = grid.row_spacing = 7;
-            grid.halign = Gtk.Align.CENTER;
+            grid.halign = Gtk.Align.START;
+            grid.margin_left = 10;
 
             grid.attach (text,   1, 0);
             grid.attach (author, 1, 1);
