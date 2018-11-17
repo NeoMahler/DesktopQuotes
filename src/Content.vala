@@ -37,7 +37,8 @@ public class ContentStack : Gtk.Stack {
         Content () {
             text = "Life happens wherever you are, whether you make it or not.",
             author = "Iroh"
-        },        Content () {
+        },
+        Content () {
             text = "There is nothing wrong with letting people who love you, help you.",
             author = "Iroh"
         },
@@ -216,8 +217,5 @@ public class ContentStack : Gtk.Stack {
 
             i++;
         }
-
-        var rand = Random.int_range (1, 11);
-        visible_child_name = rand.to_string ();
     }
 }

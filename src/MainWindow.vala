@@ -108,7 +108,7 @@ public class MainWindow : Gtk.Window {
     }
 
     private void randomize_principle (ContentStack stack, bool allow_current = false) {
-        int rand = Random.int_range (1, 29);
+        int rand = Random.int_range (1, 38);
         int current = int.parse (stack.visible_child_name);
 
         if (allow_current || rand != current) {
